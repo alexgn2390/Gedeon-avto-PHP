@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Podbor auto</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/jquery-ui.min.css">
+    <link rel="stylesheet" href="styles/slick.css">
+    <link rel="stylesheet" href="styles/slick-theme.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/adaptive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            for (let j = 0; j < document.scripts.length; j++) {
+                if (document.scripts[j].src === r) {
+                    return;
+                }
+            }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(93580768, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/93580768" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <img src="images/logo_blue.png" alt="Logo">
+        </div>
+        <nav class="header_menu" id="header_menu">
+            <div class="close" id="close">
+                <svg width="26" height="28" viewBox="0 0 26 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 26L25 2" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M1 26L25 2" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M1 2L25 26" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M1 2L25 26" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <ul>
+                <li class="menu-item menu-item-hover">
+                    <a href="#carInspection" class="carIns">Диагностика</a>
+                </li>
+                <li class="menu-item menu-item-hover">
+                    <a href="#newServices" class="newServ">Услуги и цены</a>
+                </li>
+                <li class="menu-item menu-item-hover">
+                    <a href="#reviews" class="rev">Отзывы</a>
+                </li>
+                <li class="menu-item">
+                    <img src="images/pin.png" alt="Локация" style="width: 26px; height: 26px">
+
+                    <div class="menu-item-address">
+                        <span>Екатеринбург,</span>
+                        <span class="menu-item-second">Луначарского, 21</span>
+                    </div>
+
+                </li>
+                <li class="menu-item menu-item-hover">
+                    <img src="images/phone.png" alt="Локация" style="width: 26px; height: 26px">
+                    <a href="tel: +79122221299"> 8-912-222-12-99</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="burger" id="burger">
+            <svg width="35" height="26" viewBox="0 0 35 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 1H35" stroke="#3D3D3D" stroke-width="2"/>
+                <path d="M0 13H35" stroke="#3D3D3D" stroke-width="2"/>
+                <path d="M0 25H35" stroke="#3D3D3D" stroke-width="2"/>
+            </svg>
+
+        </div>
+    </div>
+</header>
+
+<section class="main">
+    <div class="main-arrows-img-left">
+        <img src="images/Vector_19.png" alt="" class="image_1" id="img1">
+        <img src="images/Vector_18.png" alt="" class="image_1" id="img2">
+        <img src="images/Vector_17.png" alt="" class="image_1" id="img3">
+        <img src="images/Vector_16.png" alt="" class="image_1" id="img4">
+        <img src="images/Vector_15.png" alt="" class="image_1" id="img5">
+        <img src="images/Vector_14.png" alt="" class="image_1" id="img6">
+        <img src="images/Vector_13.png" alt="" class="image_1" id="img7">
+        <img src="images/Vector_12.png" alt="" class="image_1" id="img8">
+        <img src="images/Vector_11.png" alt="" class="image_1" id="img9">
+    </div>
+    <div class="main-arrows-img-right">
+        <img src="images/Vector_1.png" alt="" class="image_2">
+        <img src="images/Vector_2.png" alt="" class="image_2">
+        <img src="images/Vector_3.png" alt="" class="image_2">
+        <img src="images/Vector_4.png" alt="" class="image_2">
+        <img src="images/Vector_5.png" alt="" class="image_2">
+        <img src="images/Vector_6.png" alt="" class="image_2">
+        <img src="images/Vector_7.png" alt="" class="image_2">
+        <img src="images/Vector_8.png" alt="" class="image_2">
+        <img src="images/Vector_9.png" alt="" class="image_2">
+    </div>
+    <div class="container">
+        <h1 class="main-title">Подберём &nbsp;идеальный &nbsp;автомобиль&nbsp;
+            <span class="main-lineBottom">за 1 неделю</span>
+        </h1>
+
+        <div class="main-description">Гарантируем техническую исправность и юридическую чистоту</div>
+
+        <div class="main-image">
+            <img src="images/cars.png" alt="Cars" style="width: 1170px">
+        </div>
+        <div class="main-arrows-img-bottom">
+            <img src="images/vector1_bottom.png" alt="" class="image_3">
+            <img src="images/vector2_bottom.png" alt="" class="image_3">
+            <img src="images/vector3_bottom.png" alt="" class="image_3">
+            <img src="#" alt="" class="image_3">
+        </div>
+        <form class="main-action" id="main_form">
+            <input type="text" class="phone-input" id="mainInput" placeholder="+7 999 999 99 99" name="phone">
+            <input type="submit" value="Задать вопрос" class="button main-button" id="button_1">
+        </form>
+
+        <div class="main-inscription">Спасибо! Ожидайте звонка в ближайшее время.</div>
+        <div class="popup-privacy-policy">Нажимая на кнопку вы соглашаетесь с<a href="agreement.html"> Политикой
+            конфиденциальности и обработки данных </a></div>
+    </div>
+</section>
+
+<div class="main-decor">
+    <div class="main-decor-element">
+        <img src="images/background_line_image.png" alt="Декор">
+    </div>
+</div>
+
+<section class="advantage">
+    <div class="container">
+        <h2 class="title-h2 advantage-title-h2">Ваша &nbsp;<span class="lineBottom">безопасность</span> – наш &nbsp;приоритет
+        </h2>
+        <div class="advantage-description">При покупке поддержанного автомобиля не дайте себя обмануть – доверьте
+            проверку профессионалам.
+        </div>
+        <div class="advantage-cards">
+            <div class="advantage-card advantage-card-lineBottomLong advantage-card-lineRight">
+                <div class="advantage-parallelogram_1"></div>
+                <div class="advantage-parallelogram_2"></div>
+                <p class="advantage-card-text">Заключаем официальный <span class="fontWeight">договор</span></p>
+            </div>
+            <div class="advantage-card advantage-card-lineRight advantage-card-lineTop">
+                <div class="advantage-parallelogram_1 advantage-parallelogram_1_position"></div>
+                <div class="advantage-parallelogram_2"></div>
+                <p class="advantage-card-text">Выезд со своим <span class="fontWeight">диагностическим</span>
+                    оборудованием</p>
+            </div>
+            <div class="advantage-card advantage-card-lineRight advantage-card-lineBottom">
+                <div class="advantage-parallelogram_1"></div>
+                <div class="advantage-parallelogram_2"></div>
+                <p class="advantage-card-text">Наш опыт <span class="fontWeight">экономит</span> вам время и деньги</p>
+            </div>
+            <div class="advantage-card advantage-card-lineTopLong">
+                <div class="advantage-parallelogram_1 advantage-parallelogram_1_position"></div>
+                <div class="advantage-parallelogram_2"></div>
+                <p class="advantage-card-text">Нам доверяют подбор авто <span class="fontWeight">с 2013 года</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="carInspection" id="carInspection">
+    <div class="container">
+        <h2 class="title-h2 carInspection-title-h2">9 &nbsp;этапов &nbsp;<span class="lineBottom">проверки&nbsp;</span>
+            автомобиля </h2>
+        <div class="carInspection-sixSteps">
+            <div class="carInspection-nav">
+                <img src="images/car_transformed.png" alt="Скелет автомобиля">
+                <button class="carInspection-btn-slide carInspection-btn" id="btn_1" data-index="0"></button>
+                <button class="carInspection-btn-slide carInspection-btn" id="btn_2" data-index="1"></button>
+                <button class="carInspection-btn-slide carInspection-btn" id="btn_3" data-index="2"></button>
+                <button class="carInspection-btn-slide carInspection-btn" id="btn_4" data-index="3"></button>
+                <button class="carInspection-btn-slide carInspection-btn" id="btn_5" data-index="4"></button>
+                <button class="carInspection-btn-slide carInspection-btn" id="btn_6" data-index="5"></button>
+                <div class="carInspection-btn-slide carInspection-nav-btn" id="btn_7" data-index="6">
+                    <div class="carInspection-nav-btn-block">
+                        <img src="images/icon-wheel.png" alt="" style="width: 50px; height: 50px">
+                        <button class="carInspection-btn carInspection-nav-button"></button>
+                    </div>
+                </div>
+                <div class=" carInspection-btn-slide carInspection-nav-btn" id="btn_8" data-index="7">
+                    <img src="images/icon_certificied.png" alt="" style="width: 50px; height: 50px">
+                    <button class="carInspection-btn carInspection-nav-button"></button>
+                </div>
+
+                <div class="carInspection-btn-slide carInspection-nav-btn" id="btn_9" data-index="8">
+                    <img src="images/icon_car.png" alt="" style="width: 50px; height: 50px">
+                    <button class="carInspection-btn carInspection-nav-button "></button>
+                </div>
+            </div>
+            <div class="carInspection-info" id="carInspection-info_1">
+                <img src="images/arrow_title_carInspection.png" style="width: 600px" class="carInspection-info-img">
+                <div class="carInspection-info-title carInspection-info-title-m" id="titleText">ХОДОВАЯ ЧАСТЬ</div>
+                <div class="carInspection-info-text" id="text1">Поднимаем машину в сервисе</div>
+                <div class="carInspection-info-text" id="text2">Износ рычагов, сайлентблоков</div>
+                <div class="carInspection-info-text" id="text3">Оценка амортизаторов и стоек</div>
+                <div class="carInspection-info-text" id="text4">Проверка на люфт и скрытые повреждения ТС</div>
+                <div class="carInspection-info-text" id="text5"></div>
+            </div>
+        </div>
+        <div class="carInspection-threeStep">
+            <div class="carInspection-card">
+                <div class="carInspection-info-title carInspection-info-title-card"><p>Тест-драйв</p></div>
+                <img src="images/photo_wheel.png" alt="Фото руля" class="carInspection-card-img">
+                <div class="carInspection-info-text"> Поиск посторонних звуков, стуков, скрежетов, люфтов</div>
+                <div class="carInspection-info-text">Плавность переключения передач</div>
+                <div class="carInspection-info-text">Работа ходовой системы и рулевого управления</div>
+                <div class="carInspection-info-text"> Работа системы курсовой устойчивости и вспомогат. систем</div>
+                <div class="carInspection-info-text"> Работа амортизаторов</div>
+            </div>
+            <div class="carInspection-card">
+                <div class="carInspection-info-title carInspection-info-title-card"><p>Чистота покупки</p></div>
+                <div class="carInspection-info-text"> ГИБДД (розыск, угон)</div>
+                <div class="carInspection-info-text">История владения</div>
+                <div class="carInspection-info-text">ФССП (наличие исполнительного производства)</div>
+                <div class="carInspection-info-text">Запрет на регистрационные действия</div>
+                <div class="carInspection-info-text"> Кредитное обременение</div>
+                <div class="carInspection-info-text"> ДТП</div>
+                <div class="carInspection-info-text"> Арест, залог</div>
+                <div class="carInspection-info-text"> Подлинность ПТС</div>
+                <div class="carInspection-info-text"> Сервисная история обслуживания ТС</div>
+                <div class="carInspection-info-text"> Использовалось ли в качестве такси</div>
+            </div>
+            <div class="carInspection-card">
+                <div class="carInspection-info-title carInspection-info-title-card"><p>Мониторинг рынка</p></div>
+                <img src="images/photo_car_market.png" alt="Фото автомаркета" class="carInspection-card-img">
+                <div class="carInspection-info-text"> Оперативно мониторим новые объявления о продаже авто</div>
+                <div class="carInspection-info-text">Знаем реальную цену автомобилей</div>
+                <div class="carInspection-info-text">Знаем историю продажи и изменения цены</div>
+                <div class="carInspection-info-text"> Знаем «слабые места» разных марок и моделей</div>
+                <div class="carInspection-info-text"> Помогаем сторговаться на более низкую цену</div>
+            </div>
+        </div>
+        <div class="carInspection-carousel-img">
+            <img src="images/plashka_pod_spisok.png" alt="">
+        </div>
+        <div class="carInspection-carousel" id="carInspection-carousel">
+            <div>
+                <div class="carInspection-carousel-info">
+                    <div class="carInspection-info-title">
+                        ХОДОВАЯ ЧАСТЬ
+                    </div>
+                    <div class="carInspection-info-text">Поднимаем машину в сервисе</div>
+                    <div class="carInspection-info-text">Износ рычагов, сайлентблоков</div>
+                    <div class="carInspection-info-text">Оценка амортизаторов и стоек</div>
+                    <div class="carInspection-info-text">Проверка на люфт и скрытые повреждения дня ТС</div>
+                </div>
+            </div>
+            <div>
+                <div class="carInspection-carousel-info">
+                    <div class="carInspection-info-title ">Колеса, диски, тормоза</div>
+                    <div class="carInspection-info-text">Осмотр колесных дисков</div>
+                    <div class="carInspection-info-text">Оценка тормозных колодок</div>
+                    <div class="carInspection-info-text">Оценка остаточной величины протектора, равномерность износа
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="carInspection-carousel-info">
+                    <div class="carInspection-info-title ">Компьютерная диагностика</div>
+                    <div class="carInspection-info-text">Подтверждение пробега или его коррекции</div>
+                    <div class="carInspection-info-text">Выявление ошибок систем электроники и их расшифровка</div>
+                    <div class="carInspection-info-text">Оценка работоспособности интеллектуальных систем
+                        (парктроник,климат, медиа и т.п.)
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="carInspection-carousel-info">
+                    <div class="carInspection-info-title ">Двигатель и коробка передач</div>
+                    <div class="carInspection-info-text">Проверка всех узлов ДВС</div>
+                    <div class="carInspection-info-text">Поиск подтеков и посторонних шумов</div>
+                    <div class="carInspection-info-text">Проверка уровня технических жидкостей</div>
+                    <div class="carInspection-info-text">Поиск задиров и царапин в цилиндрах при помощи эндоскопа</div>
+                    <div class="carInspection-info-text">Изношенность турбин, замер компрессии, давление наддува</div>
+                </div>
+            </div>
+            <div>
+                <div class="carInspection-carousel-info">
+                    <div class="carInspection-info-title">Осмотр кузова</div>
+                    <div class="carInspection-info-text">Проверка геометрии кузова</div>
+                    <div class="carInspection-info-text">Поиск следов ремонта и ДТП</div>
+                    <div class="carInspection-info-text">Проверка проёмов, дна, крыши</div>
+                    <div class="carInspection-info-text">Проверка толщины ЛКП и выявление незаводских окрасов</div>
+                </div>
+            </div>
+            <div>
+                <div class="carInspection-carousel-info">
+                    <div class="carInspection-info-title">Салон автомобиля</div>
+                    <div class="carInspection-info-text">Корректность работы бортового оборудования</div>
+                    <div class="carInspection-info-text">Работоспособность систем подогрева, климат-контроля</div>
+                    <div class="carInspection-info-text">Целостность подушек безопасности</div>
+                    <div class="carInspection-info-text">Использовалось ли в качестве такси</div>
+                    <div class="carInspection-info-text">Отношение собственника к своему автомобилю</div>
+                </div>
+            </div>
+            <div>
+                <div class="carInspection-carousel-info">
+                    <div class="carInspection-info-title"><p>Тест-драйв</p></div>
+                    <div class="carInspection-info-text"> Поиск посторонних звуков, стуков, скрежетов, люфтов</div>
+                    <div class="carInspection-info-text">Плавность переключения передач</div>
+                    <div class="carInspection-info-text">Работа ходовой системы и рулевого управления</div>
+                    <div class="carInspection-info-text"> Работа системы курсовой устойчивости и вспомогат. систем</div>
+                    <div class="carInspection-info-text"> Работа амортизаторов</div>
+                </div>
+            </div>
+            <div>
+                <div class="carInspection-carousel-info">
+                    <div class="carInspection-info-title"><p>Чистота покупки</p></div>
+                    <div class="carInspection-info-text"> ГИБДД (розыск, угон)</div>
+                    <div class="carInspection-info-text">История владения</div>
+                    <div class="carInspection-info-text">ФССП (наличие исполнительного производства)</div>
+                    <div class="carInspection-info-text">Запрет на регистрационные действия</div>
+                    <div class="carInspection-info-text"> Кредитное обременение</div>
+                    <div class="carInspection-info-text"> ДТП</div>
+                    <div class="carInspection-info-text"> Арест, залог</div>
+                    <div class="carInspection-info-text"> Подлинность ПТС</div>
+                    <div class="carInspection-info-text"> Сервисная история обслуживания ТС</div>
+                    <div class="carInspection-info-text"> Подлинность ПТС</div>
+                    <div class="carInspection-info-text"> Использовалось ли в качестве такси</div>
+                </div>
+            </div>
+            <div>
+                <div class="carInspection-carousel-info">
+                    <div class="carInspection-info-title"><p>Мониторинг рынка</p></div>
+                    <div class="carInspection-info-text"> Оперативно мониторим новые объявления о продаже авто</div>
+                    <div class="carInspection-info-text">Знаем реальную цену автомобилей</div>
+                    <div class="carInspection-info-text">Знаем историю продажи и изменения цены</div>
+                    <div class="carInspection-info-text"> Знаем «слабые места» разных марок и моделей</div>
+                    <div class="carInspection-info-text"> Помогаем сторговаться на более низкую цену</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="newServices" id="newServices">
+    <div class="newServices_container">
+        <h2 class="title-h2 newServices-title-h2">Помощь &nbsp;с&nbsp; <span class="lineBottom">покупкой</span> &nbsp;автомобиля
+            &nbsp;и&nbsp;
+            стоимость &nbsp;услуг </h2>
+        <div class="newServices-service">
+            <div class="newServices-service-block_1 block_text">
+                <div class="newServices-service-block-text_1 ">
+                    <div class="newServices-service-title newServices-service-title-w">Подбор автомобиля под ключ</div>
+                    <div>
+                        <div class="newServices-service-text">Поиск до результата</div>
+                        <div class="newServices-service-text">Экономия вашего времени</div>
+                        <div class="newServices-service-text">Лучший авто на свой бюджет</div>
+                    </div>
+                    <div class="newServices-service-summ">от 25000 рублей</div>
+                </div>
+                <button type="button" class="button newServices-service-button newServices-service-button-1 button_btn"
+                        id="button_2">Заказать
+                </button>
+            </div>
+            <div class="newServices-service-block_2 block_text">
+                <div class="newServices-service-block-text_2 ">
+                    <div class="newServices-service-title newServices-service-title-2">Выездная диагностика <br>
+                        1 автомобиля перед покупкой
+                    </div>
+                    <div>
+                        <div class="newServices-service-text">Аргументированный торг с продавцом</div>
+                        <div class="newServices-service-text">Уверенность в покупке</div>
+                        <div class="newServices-service-text">Скидка 5% на подбор авто под ключ</div>
+                    </div>
+
+                    <div class="newServices-service-summ">3000 рублей</div>
+                </div>
+                <button type="button" class="button newServices-service-btn button_btn button_btn_2 " id="button_3">
+                    Заказать
+                </button>
+            </div>
+            <div class="newServices-service-block_3 block_text">
+                <div class="newServices-service-block-text_3 ">
+                    <div class="newServices-service-title newServices-service-title-w">АВТОЭксперт
+                        на весь день
+                    </div>
+                    <div>
+                        <div class="newServices-service-text">Число просмотров не ограниченно</div>
+                        <div class="newServices-service-text">Перемещение на авто эксперта</div>
+                        <div class="newServices-service-text">Советы по поиску и осмотру авто</div>
+                    </div>
+                    <div class="newServices-service-summ">от 9000 рублей</div>
+                </div>
+                <button type="button" class="button newServices-service-button button_btn" id="button_4">Заказать
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="survey">
+    <div class="container">
+        <div class="survey-text survey-text-1">
+            Вы уже знаете, <br> что ищете?
+        </div>
+        <div class="survey-arrows survey-arrows-img-1">
+            <img src="images/arrows_light.png" alt="Стрелки светлее" class="survey-arrows-img">
+        </div>
+
+        <div class="survey-text survey-text-2">
+            Ответьте на вопросы –
+            это ускорит подбор авто
+        </div>
+        <div class="survey-arrows survey-arrows-img-2">
+            <img src="images/arrows_dark.png" alt="Стрелки темнее" class="survey-arrows-img">
+        </div>
+        <button type="button" class="button survey-button survey-button-1" id="button_survey">Пройти опрос</button>
+    </div>
+</section>
+
+<section class="guarantee">
+    <div class="container">
+        <div class="guarantee-arrows">
+            <img src="images/arrows.png" alt="Стрелки">
+            <h2 class="title-h2 guarantee-title-h2">тройная&nbsp; <span class="lineBottom">Гарантия</span>&nbsp; защиты
+                &nbsp;покупателя
+            </h2>
+        </div>
+        <div class="guarantee-threeStep">
+            <div class="guarantee-threeStep-block">
+                <div class="guarantee-threeStep-number">1</div>
+                <div class="guarantee-threeStep-text">
+                    Гарантия <span class="fontWeight">6 МЕСЯЦЕВ</span>
+                    на основные узлы и агрегаты
+                </div>
+            </div>
+            <div class="guarantee-threeStep-block">
+                <div class="guarantee-threeStep-number">2</div>
+                <div class="guarantee-threeStep-text">
+                    Гарантированная <span class="fontWeight">ЭКОНОМИЯ</span> за счёт торга за автомобиль
+                </div>
+            </div>
+            <div class="guarantee-threeStep-block">
+                <div class="guarantee-threeStep-number">3</div>
+                <div class="guarantee-threeStep-text">
+                    Гарантия правовой чистоты сделки и <span class="fontWeight">ЗАЩИТЫ</span> от мошенников
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="reviews" id="reviews">
+    <div class="reviews-img">
+        <img src="images/big_blue_line.png" alt="">
+    </div>
+    <div class="container">
+        <h2 class="title-h2 reviews-title-h2"><span class="lineBottom">отзывы</span>&nbsp; наших&nbsp; клиентов</h2>
+
+        <div class="reviews-cards">
+            <div class="review-card">
+                <div class="review-card-title title_review">Chevrolet cruize</div>
+                <div class="review-card-img img_review"><img src="images/review_image1.png"
+                                                             alt="Отзыв мы с мужем"></div>
+                <div class="review-card-daySum">
+                    <div class="review-card-daySum-text review-card-daySum-text-s days_review">Подбор: <span
+                            class="fontWeight">9 дней</span>
+                    </div>
+                    <div class="review-card-daySum-text sum_review">Экономия: <span class="fontWeight">15000 руб.</span>
+                    </div>
+                </div>
+                <div class="review-card-text text_review">
+                    Рома очень ответственно подошёл к выбору авто, учёл все наши пожелания. При осмотре машин касался
+                    всех вопросов, касающихся документов, состояние кузова, эксплуатации авто предыдущими хозяевами,
+                    <span class="fontWeight">такие вопросы, которые мы бы и не догадались задать.</span>
+                    Мы очень довольны выбором авто!
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-card-title title_review">renault duster</div>
+                <div class="review-card-img img_review"><img src="images/review_image2.png"
+                                                             alt="Отзыв не подвела"></div>
+                <div class="review-card-daySum">
+                    <div class="review-card-daySum-text review-card-daySum-text-s  days_review">Подбор: <span
+                            class="fontWeight">4 дня</span>
+                    </div>
+                    <div class="review-card-daySum-text sum_review">Экономия: <span class="fontWeight">11000 руб.</span>
+                    </div>
+                </div>
+                <div class="review-card-text text_review">
+                    Благодарим компанию Gedeon-Auto за помощь в покупке авто! <span class="fontWeight">Прошло уже полгода с момента покупки, а
+                    машина нас не разу не подвела,</span> благодаря качественной оценке работников компании!
+                    Наша семья очень довольна!!!
+                    Мы уже не первый раз обращаемся за помощью в Гедеон-авто.
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-card-title title_review">Mazda cx-5</div>
+                <div class="review-card-img img_review"><img src="images/review_image3.png" alt="Отзыв зорький глаз">
+                </div>
+                <div class="review-card-daySum daySum_review">
+                    <div class="review-card-daySum-text review-card-daySum-text-s ">Подбор: <span class="fontWeight">5 дней</span>
+                    </div>
+                    <div class="review-card-daySum-text ">Экономия: <span class="fontWeight">24000 руб.</span></div>
+                </div>
+                <div class="review-card-text text_review">
+                    Хочу по благодарить за профессиональную и ответственную работу. Это, действительно, очень сложно
+                    выбрать себе надежный подержанный автомобиль, но <span class="fontWeight">индивидуальный подход к моим пожеланиям и зоркий
+                    глаз</span> Романа, помог мне найти именно то, что я искала. Спасибо огромное!!!
+                </div>
+            </div>
+        </div>
+        <div class="reviews-cards-slide">
+            <div class="review-card">
+                <div class="review-card-title title_review">Chevrolet cruize</div>
+                <div class="review-card-img img_review"><img src="images/review_image1.png"
+                                                             alt="Отзыв мы с мужем"></div>
+                <div class="review-card-daySum">
+                    <div class="review-card-daySum-text review-card-daySum-text-s days_review">Подбор: <span
+                            class="fontWeight">9 дней</span>
+                    </div>
+                    <div class="review-card-daySum-text sum_review">Экономия: <span class="fontWeight">15000 руб.</span>
+                    </div>
+                </div>
+                <div class="review-card-text text_review">
+                    Рома очень ответственно подошёл к выбору авто, учёл все наши пожелания. При осмотре машин касался
+                    всех вопросов, касающихся документов, состояние кузова, эксплуатации авто предыдущими хозяевами,
+                    такие вопросы, которые мы бы и не догадались задать.
+                    Мы очень довольны выбором авто!
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-card-title title_review">renault duster</div>
+                <div class="review-card-img img_review"><img src="images/review_image2.png"
+                                                             alt="Отзыв не подвела"></div>
+                <div class="review-card-daySum">
+                    <div class="review-card-daySum-text review-card-daySum-text-s  days_review">Подбор: <span
+                            class="fontWeight">4 дня</span>
+                    </div>
+                    <div class="review-card-daySum-text sum_review">Экономия: <span class="fontWeight">11000 руб.</span>
+                    </div>
+                </div>
+                <div class="review-card-text text_review">
+                    Благодарим компанию Gedeon-Auto за помощь в покупке авто! Прошло уже полгода с момента покупки, а
+                    машина нас не разу не подвела, благодаря качественной оценке работников компании !
+                    Наша семья очень довольна!!!
+                    Мы уже не первый раз обращаемся за помощью в Гедеон-авто.
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-card-title title_review">Mazda cx-5</div>
+                <div class="review-card-img img_review"><img src="images/review_image3.png" alt="Отзыв зорький глаз">
+                </div>
+                <div class="review-card-daySum daySum_review">
+                    <div class="review-card-daySum-text review-card-daySum-text-s ">Подбор: <span class="fontWeight">5 дней</span>
+                    </div>
+                    <div class="review-card-daySum-text ">Экономия: <span class="fontWeight">24000 руб.</span></div>
+                </div>
+                <div class="review-card-text text_review">
+                    Хочу по благодарить за профессиональную и ответственную работу. Это, действительно, очень сложно
+                    выбрать себе надежный подержанный автомобиль, но индивидуальный подход к моим пожеланиям и зоркий
+                    глаз Романа, помог мне найти именно то, что я искала. Спасибо огромное!!!
+                </div>
+            </div>
+        </div>
+        <button class="button reviews-button" id="button_review">ХОЧУ КЛАССНЫЙ АВТОМОБИЛЬ!</button>
+        <div class="review-social-link">
+            <div>
+                <a href="https://vk.com/topic-51667237_32246615" target=" _blank" class="reviews-vk-link">
+                    Читать отзывы в ВК
+                    <img src="images/arrow_vk.png" alt="" class="reviews-title-arrow">
+                </a>
+            </div>
+            <div>
+                <a href="https://yandex.ru/maps/org/gedeon_avto/178593422604/reviews/?ll=60.620335%2C56.854993&z=15.04"
+                   target="_blank" class="reviews-vk-link">
+                    Отзывы в Яндекс картах
+                    <img src="images/arrow_vk.png" alt="" class="reviews-title-arrow">
+                </a>
+            </div>
+            <div>
+                <a href="https://2gis.ru/ekaterinburg/firm/70000001064661986/60.615714%2C56.854485/tab/reviews?m=60.619708%2C56.854582%2F16.57"
+                   target="_blank" class="reviews-vk-link">
+                    Читать отзывы в 2GIS
+                    <img src="images/arrow_vk.png" alt="" class="reviews-title-arrow">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-logo-menu">
+            <div class="logo">
+                <img src="images/logo_white.png" alt="Логотип белый">
+            </div>
+            <nav class="footer-menu">
+                <ul>
+                    <li class="footer-menu-item menu-item-hover">
+                        <a href="#carInspection" class=carIns>Диагностика</a>
+                    </li>
+                    <li class="footer-menu-item menu-item-hover">
+                        <a href="#newServices" class="newServ">Цены</a>
+                    </li>
+                    <li class="footer-menu-item menu-item-hover">
+                        <a href="#reviews" class="rev">Отзывы</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-social">
+            <a href="https://api.whatsapp.com/send?phone=79120373674&text=Здравствуйте, пишу вам с сайта podbor-avto96">
+                <svg width="20" height="20" viewBox="0 0 86 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M44.5 78C64.6584 78 81 61.6584 81 41.5C81 21.3416 64.6584 5 44.5 5C24.3416 5 7.99999 21.3416 7.99999 41.5C7.99999 47.9404 9.66804 53.9912 12.5957 59.244L6.49999 78L6.79154 77.9298L6.76687 78.0056L19.767 74.8278C19.7596 74.8223 19.7523 74.8169 19.7449 74.8114L26.4074 73.2075C31.7403 76.2571 37.9166 78 44.5 78ZM44.5 83C67.4198 83 86 64.4198 86 41.5C86 18.5802 67.4198 0 44.5 0C21.5802 0 2.99999 18.5802 2.99999 41.5C2.99999 48.1617 4.56962 54.4568 7.35922 60.0356L0.62281 80.726C0.342022 81.5885 0.550346 82.5353 1.16718 83.2002C1.78401 83.8652 2.71258 84.1439 3.59362 83.9285L25.723 78.5191C31.3614 81.3847 37.742 83 44.5 83Z" fill="white"/>
+                    <path d="M25.0001 29.5C25 25.2033 29.1668 21.5 31.5001 20L40 29.5L35.5001 34.5C35.5001 38 38.8002 40.7 42.0001 43.5C46 47 50 49.5 52.0001 49.5L56.5001 45.5L65.0001 54C63.1668 56.5 60 60 55 60C50 60 41.5003 56 34.0001 48C26.5 40 25.0001 33.7967 25.0001 29.5Z" stroke="white" stroke-width="5" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <a href="https://t.me/TrenerRoman">
+                <svg width="22" height="19" viewBox="0 0 95 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40.5 54L71.5 20.5L26.5 46L3 33L92 2.5L73.5 80.5L51.0849 62.5M40.5 54L51.0849 62.5M40.5 54L32.5 77M26.5 47.5L32.5 77M32.5 77L51.0849 62.5" stroke="white" stroke-width="5" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <a href="https://vk.com/vikupautoekb">
+                <svg width="27" height="16" viewBox="0 0 117 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M63 3.50015H43.5C41.4999 3.50015 38.5 5.50015 38.5 8.50015C38.5 10.9002 41.5 12.5001 43.5 13.0001C43.6666 17.0001 43.5 22.4999 43.5 24.5C43 26.5 41.6 27.0002 40 27.0002C38.4 27.0002 36.6667 24.3335 36 23.0001C33 17.8335 26.7 7.10013 25.5 5.50015C24.3 3.90017 22.3333 3.50016 21.5 3.50015H7.5C6.49999 3.33348 4.29997 3.50015 3.49997 5.50015C2.69997 7.50015 3.49997 10.0002 3.99997 11.0002C5.99997 16.1668 12.3 29.3001 21.5 40.5001C33 54.5001 42 61.0001 47.5 64.0001C49.6947 65.1973 52 66.5001 57 66.5001C61.5 66.5001 63.9999 64.0002 65.5 62.5002L65.5 62.5001C66.7 61.3001 68 59.5001 68 57.5001V48.5001C68.5 45.5001 71.5 44.5001 73.5 45.0001C75.5 45.5001 76.5 47.1668 77.5 48.5001C82 53.8335 91.1 64.7001 91.5 65.5001C91.9 66.3001 94 66.5001 95 66.5001H108.5C109.5 66.5001 111.7 66.3001 112.5 65.5001C113.5 64.5001 114 62.0001 113.5 60.0001C113.1 58.4001 111 55.6668 110 54.5001L98 38.0001C97.5 37.3335 96.5 35.8002 96.5 35.0002C96.5 34.2002 97.8333 32.3335 98.5 31.5002C101.833 26.6668 108.8 16.6002 110 15.0001C111.2 13.4001 112.5 11.0001 113 9.00015C113.169 8.32289 113.619 6.73721 113 5.5C112 3.50015 109.667 3.50015 108.5 3.50015H108.5H95.5C92.1473 3.50015 90.5 5.50012 90 6.50015L77.5 27.0002C76.8333 28.0002 74.7 30.0002 71.5 30.0002C68.3 30.0002 67.5 27.6668 67.5 26.5002L68 8.50015C68 7 67.5 6 66.5 5C65.5 4 64.5 3.50015 63 3.50015Z" stroke="white" stroke-width="5" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+        <div class="footer-phoneEmail">
+            <div><a href="tel: +79122221299">8-912-222-12-99</a></div>
+            <div><a href="mailto:info@gedeon-auto.ru">podbor-auto96@yandex.ru</a></div>
+        </div>
+        <div class="footer-container-small">
+            <div class="footer-logo-menu-small">
+                <div class="footer-text footer-text-m menu-item-hover"><a href="tel: +79122221299">8-912-222-12-99</a>
+                </div>
+                <nav class="footer-menu">
+                    <ul>
+                        <li class="footer-menu-item menu-item-hover">
+                            <a href="#carInspection" class=carIns>Диагностика</a>
+                        </li>
+                        <li class="footer-menu-item menu-item-hover">
+                            <a href="#newServices" class="newServ">Цены</a>
+                        </li>
+                        <li class="footer-menu-item menu-item-hover">
+                            <a href="#reviews" class="rev">Отзывы</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-social-small">
+                <a href="https://api.whatsapp.com/send?phone=79120373674&text=Здравствуйте, пишу вам с сайта Gedeon-auto">
+                    <svg width="32" height="32" viewBox="0 0 86 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M44.5 78C64.6584 78 81 61.6584 81 41.5C81 21.3416 64.6584 5 44.5 5C24.3416 5 7.99999 21.3416 7.99999 41.5C7.99999 47.9404 9.66804 53.9912 12.5957 59.244L6.49999 78L6.79154 77.9298L6.76687 78.0056L19.767 74.8278C19.7596 74.8223 19.7523 74.8169 19.7449 74.8114L26.4074 73.2075C31.7403 76.2571 37.9166 78 44.5 78ZM44.5 83C67.4198 83 86 64.4198 86 41.5C86 18.5802 67.4198 0 44.5 0C21.5802 0 2.99999 18.5802 2.99999 41.5C2.99999 48.1617 4.56962 54.4568 7.35922 60.0356L0.62281 80.726C0.342022 81.5885 0.550346 82.5353 1.16718 83.2002C1.78401 83.8652 2.71258 84.1439 3.59362 83.9285L25.723 78.5191C31.3614 81.3847 37.742 83 44.5 83Z" fill="white"/>
+                        <path d="M25.0001 29.5C25 25.2033 29.1668 21.5 31.5001 20L40 29.5L35.5001 34.5C35.5001 38 38.8002 40.7 42.0001 43.5C46 47 50 49.5 52.0001 49.5L56.5001 45.5L65.0001 54C63.1668 56.5 60 60 55 60C50 60 41.5003 56 34.0001 48C26.5 40 25.0001 33.7967 25.0001 29.5Z" stroke="white" stroke-width="5" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="https://t.me/TrenerRoman">
+                    <svg width="35" height="30" viewBox="0 0 95 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40.5 54L71.5 20.5L26.5 46L3 33L92 2.5L73.5 80.5L51.0849 62.5M40.5 54L51.0849 62.5M40.5 54L32.5 77M26.5 47.5L32.5 77M32.5 77L51.0849 62.5" stroke="white" stroke-width="5" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="https://vk.com/gedeonap">
+                    <svg width="43" height="25" viewBox="0 0 117 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63 3.50015H43.5C41.4999 3.50015 38.5 5.50015 38.5 8.50015C38.5 10.9002 41.5 12.5001 43.5 13.0001C43.6666 17.0001 43.5 22.4999 43.5 24.5C43 26.5 41.6 27.0002 40 27.0002C38.4 27.0002 36.6667 24.3335 36 23.0001C33 17.8335 26.7 7.10013 25.5 5.50015C24.3 3.90017 22.3333 3.50016 21.5 3.50015H7.5C6.49999 3.33348 4.29997 3.50015 3.49997 5.50015C2.69997 7.50015 3.49997 10.0002 3.99997 11.0002C5.99997 16.1668 12.3 29.3001 21.5 40.5001C33 54.5001 42 61.0001 47.5 64.0001C49.6947 65.1973 52 66.5001 57 66.5001C61.5 66.5001 63.9999 64.0002 65.5 62.5002L65.5 62.5001C66.7 61.3001 68 59.5001 68 57.5001V48.5001C68.5 45.5001 71.5 44.5001 73.5 45.0001C75.5 45.5001 76.5 47.1668 77.5 48.5001C82 53.8335 91.1 64.7001 91.5 65.5001C91.9 66.3001 94 66.5001 95 66.5001H108.5C109.5 66.5001 111.7 66.3001 112.5 65.5001C113.5 64.5001 114 62.0001 113.5 60.0001C113.1 58.4001 111 55.6668 110 54.5001L98 38.0001C97.5 37.3335 96.5 35.8002 96.5 35.0002C96.5 34.2002 97.8333 32.3335 98.5 31.5002C101.833 26.6668 108.8 16.6002 110 15.0001C111.2 13.4001 112.5 11.0001 113 9.00015C113.169 8.32289 113.619 6.73721 113 5.5C112 3.50015 109.667 3.50015 108.5 3.50015H108.5H95.5C92.1473 3.50015 90.5 5.50012 90 6.50015L77.5 27.0002C76.8333 28.0002 74.7 30.0002 71.5 30.0002C68.3 30.0002 67.5 27.6668 67.5 26.5002L68 8.50015C68 7 67.5 6 66.5 5C65.5 4 64.5 3.50015 63 3.50015Z" stroke="white" stroke-width="5" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer-phoneEmail-small">
+                <div><a href="mailto:info@gedeon-auto.ru">podbor-auto96@yandex.ru</a></div>
+            </div>
+            <div class="footer-text footer-text-t">
+                <span>Екатеринбург</span>
+                <span>Луначарского, 21</span>
+            </div>
+            <div class="logo">
+                <img src="images/logo_white.png" alt="Логотип белый">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="popup_background">
+    <div class="popup_background-close">
+        <svg width="36" height="36" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.4314 1.64355L37.0826 36.7006" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <path d="M37.9192 1.64355L2.26801 36.7006" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="popup-buy-auto">
+        <div class="popup-buy-auto-title" id="popup-buy-title">помощь &nbsp;ЭКСПЕРТА &nbsp;в &nbsp;покупке &nbsp;автомобиля</div>
+        <div class="popup-buy-auto-text">Оставьте свой номер – перезвоним Вам для уточнения деталей.</div>
+
+        <form class="main-action popup-action">
+            <input type="text" name="phone" class="phone-input" placeholder="+7 999 999 99 99"
+                   id="phone-input-popup">
+            <input type="submit" value="Жду звонка" class="button main-button" id="phone-button-popup">
+        </form>
+
+        <div class="popup-buy-text">Спасибо! Ожидайте звонка в ближайшее время.</div>
+
+        <div class="popup-privacy-policy">Нажимая на кнопку вы соглашаетесь с<a href="agreement.html"> Политикой
+            конфиденциальности и обработки данных </a></div>
+    </div>
+</div>
+
+<div class="popup_background_search">
+    <div class="popup_background-close">
+        <svg width="36" height="36" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.4314 1.64355L37.0826 36.7006" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <path d="M37.9192 1.64355L2.26801 36.7006" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <form class="popup_search_auto">
+        <div class="popup-buy-auto-title">Какой &nbsp;автомобиль &nbsp;ищем?</div>
+        <div class="popup-buy-auto-text">Выберите те пункты, с которыми определились. Остальные можно пропустить.
+        </div>
+        <div class="popup_search_auto-block-1">
+            <div class="popup_search_auto-param">
+                <div class="popup_search_auto-param-title">Возраст:</div>
+                <div class="popup_search_auto-param-input">
+                    <input type="checkbox" id="age_1" name="age" class="popup_check" checked>
+                    <label for="age_1" class="popup-label">0-3 года</label>
+                </div>
+                <div class="popup_search_auto-param-input">
+                    <input type="checkbox" id="age_2" name="age" class="popup_check">
+                    <label for="age_2" class="popup-label">3-5 лет</label>
+                </div>
+                <div class="popup_search_auto-param-input">
+                    <input type="checkbox" id="age_3" name="age" class="popup_check">
+                    <label for="age_3" class="popup-label">5-10 лет</label>
+                </div>
+                <div class="popup_search_auto-param-input">
+                    <input type="checkbox" id="age_4" name="age" class="popup_check">
+                    <label for="age_4" class="popup-label">10-15 лет</label>
+                </div>
+                <div class="popup_search_auto-param-input">
+                    <input type="checkbox" id="age_5" name="age" class="popup_check">
+                    <label for="age_5" class="popup-label">более 15</label>
+                </div>
+            </div>
+            <div class="popup_search_auto-param">
+                <div class="popup_search_auto-param-title">Кузов:</div>
+                <div class="popup_search_auto-param-input">
+                    <input type="checkbox" id="body_1" name="body" class="popup_check" checked>
+                    <label for="body_1" class="popup-label">седан</label>
+                </div>
+
+                <div class="popup_search_auto-param-input">
+                    <input type="checkbox" id="body_2" name="body" class="popup_check">
+                    <label for="body_2" class="popup-label">хетчбек</label>
+                </div>
+
+                <div class="popup_search_auto-param-input">
+                    <input type="checkbox" id="body_3" name="body" class="popup_check">
+                    <label for="body_3" class="popup-label">кроссовер</label>
+                </div>
+
+                <div class="popup_search_auto-param-input">
+                    <input type="checkbox" id="body_4" name="body" class="popup_check">
+                    <label for="body_4" class="popup-label">внедорожник</label>
+                </div>
+
+                <div class="popup_search_auto-param-input">
+                    <input type="checkbox" id="body_5" name="body" class="popup_check">
+                    <label for="body_5" class="popup-label">не знаю</label>
+                </div>
+            </div>
+            <div class="popup_search_auto-param">
+                <div class="popup_search_auto-param-title">Двигатель:</div>
+                <div class="popup_search_auto-param-input">
+                    <input type="checkbox" id="engine_1" name="engine" class="popup_check" checked>
+                    <label for="engine_1" class="popup-label"> бензин</label>
+                </div>
+                <div class="popup_search_auto-param-input">
+                    <input type="checkbox" id="engine_2" name="engine" class="popup_check">
+                    <label for="engine_2" class="popup-label">дизель</label>
+                </div>
+                <div class="popup_search_auto-param-input">
+                    <input type="checkbox" id="engine_3" name="engine" class="popup_check">
+                    <label for="engine_3" class="popup-label">гибрид</label>
+                </div>
+                <div class="popup_search_auto-param-input">
+                    <input type="checkbox" id="engine_4" name="engine" class="popup_check">
+                    <label for="engine_4" class="popup-label">электро</label>
+                </div>
+                <div class="popup_search_auto-param-input">
+                    <input type="checkbox" id="engine_5" name="engine" class="popup_check">
+                    <label for="engine_5" class="popup-label">не важно</label>
+                </div>
+            </div>
+            <div class="popup_search_auto-param">
+                <div class="popup_search_auto-param-title">Коробка передач:</div>
+                <div class="popup_search_auto-param-input">
+                    <input type="checkbox" id="transmission_1" name="transmission" class="popup_check" checked>
+                    <label for="transmission_1" class="popup-label">механика</label>
+                </div>
+                <div class="popup_search_auto-param-input">
+                    <input type="checkbox" id="transmission_2" name="transmission" class="popup_check">
+                    <label for="transmission_2" class="popup-label">автомат</label>
+                </div>
+                <div class="popup_search_auto-param-input">
+                    <input type="checkbox" id="transmission_3" name="transmission" class="popup_check">
+                    <label for="transmission_3" class="popup-label">робот</label>
+                </div>
+                <div class="popup_search_auto-param-input">
+                    <input type="checkbox" id="transmission_4" name="transmission" class="popup_check">
+                    <label for="transmission_4" class="popup-label">вариатор</label>
+                </div>
+                <div class="popup_search_auto-param-input">
+                    <input type="checkbox" id="transmission_5" name="transmission" class="popup_check">
+                    <label for="transmission_5" class="popup-label">не важно</label>
+                </div>
+            </div>
+        </div>
+        <div class="popup_search_auto-block-2">
+            <div class="popup_search_auto-input">
+                <input type="text" id="budget" name="budget" class="popup_input-text" placeholder="примерный диапазон">
+                <label for="budget" class="popup_label-text">Предполагаемый бюджет:</label>
+            </div>
+            <div class="popup_search_auto-input">
+                <input type="text" id="car_brand" name="model" class="popup_input-text">
+                <label for="car_brand" class="popup_label-text">Предпочитаемые марки и модели:</label>
+            </div>
+        </div>
+        <div class="main-action popup-auto-action" id="popup-auto-action">
+            <input type="text" name="phone" class="popup-phone-input" placeholder="+7 999 999 99 99"
+                   id="phone-input-survey">
+            <input type="submit" value="Подобрать авто" class="button popup-main-button" id="popup_button_search_auto">
+        </div>
+        <div class="popup-search-auto-text">Заявка поступила в работу, ожидайте звонка.</div>
+        <div class="popup-privacy-policy">Нажимая на кнопку вы соглашаетесь с<a href="agreement.html"> Политикой
+            конфиденциальности и обработки данных </a></div>
+    </form>
+</div>
+
+<div class="loader">
+    <div class="lds-ripple">
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+<script src="script/jquery-3.6.3.min.js"></script>
+<script src="script/jquery-ui.min.js"></script>
+<script src="script/jquery.maskedinput.min.js"></script>
+<script src="script/slick.min.js"></script>
+<script src="script/script.js"></script>
+</body>
+</html>
+

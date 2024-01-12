@@ -1,0 +1,12 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^www.podbor-avto96.ru$ [NC]
+RewriteRule ^(.*)$ https://podbor-avto96.ru/$1 [L,R=301]
+
+## Перенаправляем все запросы на www
+#RewriteCond %{HTTP_HOST} !^www\. [NC]
+#RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#
+## Перенаправляем все запросы с HTTP на HTTPS
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
